@@ -1,15 +1,21 @@
 import React from "react"
 
-const CharacterName = ({character, index}) => {
+const CharacterName = ({character, index, onCharacterClick, selectedCharacter}) => {
+
+    const handleClick = () => {
+        onCharacterClick(character)
+    }
 
 
     return (
 
         <>
 
-            <li>
+
+            <p onClick={handleClick}>
                 {character.name}
-            </li>
+                
+            </p>
         
 
         </>
