@@ -12,7 +12,7 @@ const CharacterName = ({character, index, onCharacterClick, selectedCharacter}) 
         <>
 
 
-            <p onClick={handleClick}>
+            <p id="pointer" onClick={handleClick}>
                 {character.name}
                 
             </p>

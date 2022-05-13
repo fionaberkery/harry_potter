@@ -6,7 +6,7 @@ const CharacterDetail = ({selectedCharacter}) => {
     return (
 
         <>
-        <div>
+        <section>
             <h3> Character name {selectedCharacter.name} </h3>
             <p> <b>House</b> {selectedCharacter.house} </p>
             <p> <b>Ancestry</b> {selectedCharacter.ancestry} </p>
@@ -16,7 +16,7 @@ const CharacterDetail = ({selectedCharacter}) => {
             <p> <b> Wand Details</b> <br/> Wood : {selectedCharacter.wand.wood} <br/> Core : {selectedCharacter.wand.core} <br/> Length : {selectedCharacter.wand.length} </p>
             <p> <img src={selectedCharacter.image} width="300px" alt="No image available" /> </p>
 
-        </div>
+        </section>
         </>
 
     )
