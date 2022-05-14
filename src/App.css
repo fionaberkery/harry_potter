@@ -39,6 +39,45 @@ h1 {
 #character-list {
     border-style: solid;
     padding: 10%;
-    margin:50px
+    margin:50px;
+    background-color: rgb(222, 222, 222);
+    color:black; 
+    border-radius: 10px;
 }
 
+#detail {
+    border-style: solid;
+    border-color: rgb(222, 222, 222);
+    padding: 10%;
+    margin:50px;
+    height:fit-content;
+    border-radius: 10px;
+}
+
+#fav-section {
+    display: flex;
+    
+}
+
+#fav-button {
+    border-style: hidden;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(222, 222, 222);
+}
+
+
+
+#favs {
+    margin-left: 10px;
+}
+
+#fav-list {
+    border-style: solid;
+    border-color: rgb(222, 222, 222);
+    padding: 70px;
+    margin:50px;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 10px;
+}

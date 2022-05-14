@@ -6,8 +6,8 @@ const CharacterDetail = ({selectedCharacter}) => {
     return (
 
         <>
-        <section>
-            <h3> Character name {selectedCharacter.name} </h3>
+        <section id="detail">
+            <h2> {selectedCharacter.name} </h2>
             <p> <b>House</b> {selectedCharacter.house} </p>
             <p> <b>Ancestry</b> {selectedCharacter.ancestry} </p>
             <p> <b>Date of Birth</b> {selectedCharacter.dateOfBirth} </p>

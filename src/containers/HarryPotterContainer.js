@@ -26,11 +26,14 @@ const HarryPotterContainer = () => {
         setSelectedCharacter(character)
     }
 
-    function playMusic(){
-        const music = new Audio("/Users/fionaberkery/CodeClan_work/week_7/weekend_hw/hp_hw/harry_potter_world/src/hp.mp3");
-        music.play();
-        }
-
+    const onFavButtonClick = (fav) => {
+        const newFavs = [...favouritesList, fav]
+        setFavouritesList(newFavs)
+    }
+    
+    const favouriteCharactersList = favouritesList.map((item) => {
+        return ( <li> {item} </li>)
+    })
 
     return (
 
@@ -48,10 +51,14 @@ const HarryPotterContainer = () => {
             </audio>
             <p id="myAudioTitle">Play for Harry Potter Theme Song</p>
             
+            <div id="fav-list">
+            <h2> Favourite Characters</h2>
+            {favouriteCharactersList}
 
+            </div>
             <section id="main-section" >
 
-            <CharactersList characters={characters} onCharacterClick={onCharacterClick} selectedCharacter={selectedCharacter} />
+            <CharactersList characters={characters} onCharacterClick={onCharacterClick} selectedCharacter={selectedCharacter} favouritesList={favouritesList} onFavButtonClick={onFavButtonClick} />
 
             {selectedCharacter ? <CharacterDetail selectedCharacter={selectedCharacter}></CharacterDetail> : null}
 
