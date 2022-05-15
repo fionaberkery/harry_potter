@@ -16,7 +16,7 @@ const CharacterName = ({character, index, onCharacterClick, selectedCharacter, f
         <>
 
             <div id="fav-section">
-            <p onClick={handleClick}> 
+            <p id="text-name" onClick={handleClick}> 
             
                 {character.name} 
             </p>

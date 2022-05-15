@@ -1,7 +1,8 @@
 import React from "react"
 import CharacterName from "./CharacterName"
+import Dropdown from "./Dropdown"
 
-const CharactersList = ({characters, onCharacterClick, selectedCharacter, favouritesList, onFavButtonClick}) => {
+const CharactersList = ({handleSelectChange, houses, characters, onCharacterClick, selectedCharacter, favouritesList, onFavButtonClick}) => {
 
     const CharacterNodes = characters.map((character, index) => {
         return <CharacterName character={character} index={index} onCharacterClick={onCharacterClick} selectedCharacter={selectedCharacter} favouritesList={favouritesList} onFavButtonClick={onFavButtonClick} />
@@ -12,7 +13,10 @@ const CharactersList = ({characters, onCharacterClick, selectedCharacter, favour
         <>
         <div id="character-list">
 
-        <h2> Characters List </h2>
+        <h2> Harry Potter Characters </h2>
+        <Dropdown handleSelectChange={handleSelectChange} houses={houses}/>
+        <br></br>
+        <br></br>
 
         {CharacterNodes}
 
