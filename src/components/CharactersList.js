@@ -16,6 +16,9 @@ const CharactersList = ({handleSelectChange, houses, characters, onCharacterClic
         <h2> Harry Potter Characters </h2>
         <Dropdown handleSelectChange={handleSelectChange} houses={houses}/>
         <br></br>
+        
+
+        <p> Click on a characters name to see more info  </p>
         <br></br>
 
         {CharacterNodes}

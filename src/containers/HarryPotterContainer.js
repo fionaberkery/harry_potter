@@ -55,12 +55,12 @@ const HarryPotterContainer = ({houses}) => {
             <br/>
 
             
-            
+            <div id="audio-bit">
             <audio controls id="myAudio">
                 <source src={audio}/>
             </audio>
-            <p id="myAudioTitle">Play for Harry Potter Theme Song</p>
-            
+            <p id="myAudioTitle">Play for a more immersive experience while scrolling</p>
+            </div>
             
             <section id="main-section" >
 
@@ -72,7 +72,7 @@ const HarryPotterContainer = ({houses}) => {
             
 
             <div id="fav-list">
-            <h1 id="fav-heading"> Save Your Favourite Characters Here </h1>
+            <h3 id="fav-heading"> Save Your Favourite Characters Here </h3>
             <p id="favs">
             {favouriteCharactersList}
             </p>
